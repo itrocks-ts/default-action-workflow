@@ -6,4 +6,4 @@
 
 # default-action-workflow
 
-Wires up shared actions across the business objects of your it.rocks-powered application
+Defines shared actions across domain objects of your app.
