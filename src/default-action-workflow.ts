@@ -5,11 +5,11 @@ import { setActionTemplates } from '@itrocks/action'
 export function build()
 {
 	setActionCss(
-		{ file: '/node_modules/@itrocks/(action)/css/action.css' }
+		{ file: '/@itrocks/(action)/css/action.css' }
 	)
 	setActionTemplates(
-		{ need: 'object', file: __dirname + '/../../action/cjs/selectionAction.html' },
-		{ file: __dirname + '/../../action/cjs/action.html' }
+		{ file: '/@itrocks/action/cjs/selectionAction.html', need: 'object' },
+		{ file: '/@itrocks/action/cjs/action.html' }
 	)
 	setAction('edit',   'delete')
 	setAction('login',  'forgot-password')
