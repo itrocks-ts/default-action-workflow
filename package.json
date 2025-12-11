@@ -25,8 +25,24 @@
 	],
 	"homepage": "it.rocks",
 	"keywords": [
+		"action",
+		"actions",
 		"backend",
-		"it.rocks"
+		"default",
+		"delete",
+		"edit",
+		"forgot",
+		"framework",
+		"it.rocks",
+		"list",
+		"login",
+		"new",
+		"output",
+		"password",
+		"print",
+		"signup",
+		"user",
+		"workflow"
 	],
 	"license": "ISC",
 	"name": "@itrocks/default-action-workflow",
@@ -41,5 +57,5 @@
 		"test": "jest"
 	},
 	"types": "./esm/default-action-workflow.d.ts",
-	"version": "0.0.4"
+	"version": "0.0.5"
 }
