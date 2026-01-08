@@ -11,12 +11,12 @@ export function build()
 		{ file: '/@itrocks/action/cjs/selectionAction.html', need: 'object' },
 		{ file: '/@itrocks/action/cjs/action.html' }
 	)
-	setAction('edit',   'delete')
+	setAction('edit',   'delete', { target: '#notification:prepend' })
 	setAction('login',  'forgot-password')
 	setAction('login',  'signup', { caption: 'Sign up' })
 	setAction('list',   'new')
-	setAction('list',   'delete', { need: 'object' })
+	setAction('list',   'delete', { need: 'object', target: '#notification:prepend' })
 	setAction('output', 'edit')
-	setAction('output', 'print', { target: undefined } )
-	setAction('output', 'delete')
+	setAction('output', 'print', { target: '_blank' } )
+	setAction('output', 'delete', { target: '#notification:prepend' })
 }
