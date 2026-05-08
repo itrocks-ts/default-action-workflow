@@ -8,20 +8,17 @@
 	},
 	"description": "Defines shared actions across domain objects of your app",
 	"devDependencies": {
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
-	"exports": {
-		"import": "./esm/default-action-workflow.js",
-		"require": "./cjs/default-action-workflow.js"
-	},
+	"exports": "./cjs/default-action-workflow.js",
 	"files": [
 		"LICENSE",
 		"README.md",
-		"*/*.d.ts",
-		"*/*.js"
+		"*.d.ts",
+		"*.js"
 	],
 	"homepage": "it.rocks",
 	"keywords": [
@@ -51,11 +48,8 @@
 		"url": "git+https://github.com/itrocks-ts/default-action-workflow.git"
 	},
 	"scripts": {
-		"build": "npm run build:cjs && npm run build:esm",
-		"build:cjs": "tsc -p tsconfig.cjs.json",
-		"build:esm": "tsc -p tsconfig.esm.json",
+		"build": "tsc",
 		"test": "jest"
 	},
-	"types": "./esm/default-action-workflow.d.ts",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
