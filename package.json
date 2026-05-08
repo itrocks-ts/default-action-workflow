@@ -17,8 +17,8 @@
 	"files": [
 		"LICENSE",
 		"README.md",
-		"*.d.ts",
-		"*.js"
+		"cjs",
+		"!*.map"
 	],
 	"homepage": "it.rocks",
 	"keywords": [
@@ -51,5 +51,5 @@
 		"build": "tsc",
 		"test": "jest"
 	},
-	"version": "0.1.1"
+	"version": "0.1.2"
 }
